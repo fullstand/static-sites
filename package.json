@@ -1,0 +1,38 @@
+{
+    "name": "framer-site",
+    "version": "0.0.1",
+    "description": "This is an example of an Apify actor.",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "cheerio": "1.0.0-rc.12",
+        "crawlee": "^3.4.0",
+        "dotenv": "^16.0.3",
+        "fs-extra": "^10.1.0",
+        "lodash": "^4.17.21",
+        "postgres": "^3.4.2",
+        "url": "^0.11.1"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.13",
+        "@types/node": "*",
+        "@typescript-eslint/eslint-plugin": "^5.25.0",
+        "@typescript-eslint/parser": "^5.25.0",
+        "eslint": "^8.16.0",
+        "ts-node": "^10.8.0",
+        "typescript": "^4.6.4"
+    },
+    "scripts": {
+        "start": "npm run start:dev",
+        "start:prod": "node dist/main.js",
+        "start:dev": "ts-node -T src/main.ts",
+        "build": "ts-node ./src/main.ts",
+        "lint": "eslint ./src --ext .js,.ts",
+        "lint:fix": "eslint ./src --ext .js,.ts --fix",
+        "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+    },
+    "engines": {
+        "node": "^16.0.0"
+    },
+    "author": "It's not you it's me",
+    "license": "ISC"
+}
